@@ -1,0 +1,6 @@
+:root{
+    --primaryColor: #f0f;
+}
+.bg-app-primary {
+    background-color: var(--primaryColor);
+}

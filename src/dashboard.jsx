@@ -1,10 +1,10 @@
-import { Button } from 'bootstrap'
 import React from 'react'
-import Header from './header'
+import Candidate from './components/candidate'
+import Header from './components/header'
 
 export default function Dashboard() {
     return (
-        <>
+        <div className='container-fluid'>
             <Header />
             <div className='row m-lg-4 '>
                 <div className='col-lg-6 col-md-12 col-sm-12' >
@@ -16,6 +16,12 @@ export default function Dashboard() {
                     <img className='w-50 d-block mx-auto' src={'../assets/images/phone.png'} />
                 </div>
             </div>
-        </>
+            <div className='d-block mx-auto bg-primary'>
+                <p className='fw-bold fs-4'>All candidates</p>
+            </div>
+            <div className='row'>
+                <Candidate></Candidate>
+            </div>
+        </div>
     )
 }

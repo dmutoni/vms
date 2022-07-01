@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 
 export default function Header() {
     return (
-        <div className='w-100 bg-primary'>
+        <div className='w-100 bg-app-primary'>
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="p-2 navbar-brand" href="#">Vote pro</a>
+                <p class="ms-lg-5 bg-text-color">Vote pro</p>
             </nav>
         </div>
     )

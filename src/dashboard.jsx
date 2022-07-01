@@ -6,13 +6,13 @@ export default function Dashboard() {
     return (
         <>
             <Header />
-            <div className='row bg-app-primary'>
-                <div className='w-50 col' >
+            <div className='row m-lg-4 '>
+                <div className='col-lg-6 col-md-12 col-sm-12' >
                     <p class="fw-bold fs-2">Fast and secure Presidential Elections </p>
                     <p class="fw-normal fs-6">For sure you have made a right choice</p>
-                    <button className="btn btn-primary w-25 h-50">JOIN NOW</button>
+                    <button className="btn w-50 bg-text-color h-24 bg-app-primary">JOIN NOW</button>
                 </div>
-                <div className='w-50 col'>
+                <div className='col-lg-6 col-md-12 col-sm-12'>
                     <img className='w-50 d-block mx-auto' src={'../assets/images/phone.png'} />
                 </div>
             </div>

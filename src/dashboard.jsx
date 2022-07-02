@@ -8,9 +8,9 @@ export default function Dashboard() {
       <Header />
       <div className="row m-lg-4 ">
         <div className="col-lg-6 col-md-12 col-sm-12">
-          <p class="fw-bold fs-2">Fast and secure Presidential Elections </p>
+          <p class="fw-bold fs-1">Fast and secure Presidential Elections </p>
           <p class="fw-normal fs-6">For sure you have made a right choice</p>
-          <button className="btn w-50 bg-text-color h-24 bg-app-primary">
+          <button className="btn w-50 bg-text-color h-25  bg-app-primary">
             JOIN NOW
           </button>
         </div>
@@ -21,10 +21,18 @@ export default function Dashboard() {
           />
         </div>
       </div>
-      <div className="bg-primary">
-        <p className="d-block mx-auto fw-bold fs-4">All candidates</p>
+      <div className="d-flex justify-content-center align-content-center ">
+        <p className="d-block mx-auto font-bold fs-4">All candidates</p>
       </div>
-      <div className="row col-12">
+      <div className="row col-8 mx-auto ">
+        <Candidate />
+        <Candidate />
+        <Candidate />
+        <Candidate />
+        <Candidate />
+        <Candidate />
+        <Candidate />
+        <Candidate />
         <Candidate />
       </div>
     </div>

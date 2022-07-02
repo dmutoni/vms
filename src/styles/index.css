@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
     --primaryColor: #032F4A;
     --secondaryColor: #9AC538;
@@ -9,5 +13,5 @@
     color: #9AC538;
 }
 .candidate {
-    width: 12%;
+    width: 50%;
 }

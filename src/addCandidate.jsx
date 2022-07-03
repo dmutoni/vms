@@ -8,7 +8,7 @@ export default function AddCandidate() {
       <div className="col-2 ">
         <Sidebar />
       </div>
-      <div className="col-4 mt-5">
+      <div className="col-12 col-lg-4 mt-5">
         <h3>Add Candidate</h3>
         <form>
           <div className="mb-3">

@@ -8,8 +8,8 @@ export default function Dashboard() {
       <div className="col-2 ">
         <Sidebar />
       </div>
-      <div className="col-8 mt-5">
-        <div className="d-flex flex-row justify-content-between ">
+      <div className="col-12 col-lg-8 mt-5">
+        <div className="d-block d-lg-flex flex-row justify-content-between ">
           <h2>All candidates</h2>
           <Link to="/add-candidate">
             <button type="button" className="btn bg-app-primary bg-text-color ">

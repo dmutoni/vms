@@ -4,11 +4,16 @@ import Sidebar from "./components/sidebar";
 export default function Dashboard() {
   return (
     <div className="d-flex flex-row gap-4">
-      <div className="col-2 bg-primary">
+      <div className="col-2 ">
         <Sidebar />
       </div>
       <div className="col-8 mt-5">
-        <h2>All candidates</h2>
+        <div className="d-flex flex-row justify-content-between ">
+          <h2>All candidates</h2>
+          <button type="button" class="btn bg-app-primary bg-text-color ">
+            Add candidate
+          </button>
+        </div>
         <table className="table table-hover table-bordered mt-5">
           <thead>
             <tr>

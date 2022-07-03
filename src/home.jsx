@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="col-12">
       <Header />
-      <div className="m-lg-4 p-md-2 p-sm-3 d-lg-flex d-md-block ">
+      <div className="m-lg-4 p-2 p-md-2 p-sm-3 d-lg-flex d-md-block ">
         <div className="col-lg-6 col-md-12 col-sm-12">
           <p className="fw-bold fs-1 col-sm-12 ">
             Fast and secure Presidential Elections{" "}
@@ -31,7 +31,7 @@ export default function Home() {
       <div className="d-flex justify-content-center align-content-center mt-md-3 ">
         <p className="d-block mx-auto font-bold fs-4">All candidates</p>
       </div>
-      <div className="row col-lg-8 col-md-12 col-sm-12 mx-lg-auto d-lg-block ">
+      <div className="row col-lg-8 col-md-12 col-sm-12 mx-lg-auto  ">
         <Candidate />
         <Candidate />
         <Candidate />

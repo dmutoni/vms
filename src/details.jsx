@@ -5,13 +5,13 @@ import Header from "./components/header";
 export default function Details({ candidate }) {
   let { id } = useParams();
   return (
-    <div className="container-fluid col-12">
+    <div className="col-12">
       <Header />
-      <div className="d-flex flex-row col-10 mx-auto mt-5 gap-3 ">
-        <img className="col-4 my-auto" src={"../assets/images/barack.png"} />
-        <div className="col-5 ">
+      <div className="row mx-0 px-0 my-3 mx-lg-auto mt-lg-5 ">
+        <img className="col-12 col-lg-3" src={"../assets/images/barack.png"} />
+        <div className="col-12 col-lg-6">
           <div className="d-flex flex-row ">
-            <p className="fw-bold fs-2 ">Names: </p>
+            <p className="fw-bold fs-2 me-1 ">Names: </p>
             <p className="fw-bold fs-2">Barack Obama</p>
           </div>
           <div className="d-flex flex-row ">

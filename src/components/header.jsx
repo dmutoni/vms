@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="col-12 col-md-12 py-3 bg-app-primary">
+    <div className="col-12 py-3 bg-app-primary">
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <Link to={"/"} className="text-decoration-none">

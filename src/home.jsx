@@ -31,7 +31,7 @@ export default function Home() {
       <div className="d-flex justify-content-center align-content-center mt-md-3 ">
         <p className="d-block mx-auto font-bold fs-4">All candidates</p>
       </div>
-      <div className="row col-lg-8 col-md-12 col-sm-12 mx-lg-auto  ">
+      <div className="row col-12 mx-0 px-0 col-lg-8  mx-lg-auto  ">
         <Candidate />
         <Candidate />
         <Candidate />

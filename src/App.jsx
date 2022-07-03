@@ -5,6 +5,7 @@ import Dashboard from "./dashboard";
 import { Route, Routes } from "react-router-dom";
 import Login from "./login";
 import SignUp from "./signup";
+import Details from "./details";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/" element={<Dashboard />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/details/:id" element={<Details />} />
     </Routes>
   );
 }

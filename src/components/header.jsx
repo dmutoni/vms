@@ -1,11 +1,16 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <div className="col-12 py-3 bg-app-primary">
       <nav className="navbar  navbar-expand-lg navbar-light">
-        <p className="ms-lg-5 my-auto bg-text-color">Vote pro</p>
+        <Link
+          to="/"
+          className="ms-lg-5 my-auto bg-text-color text-decoration-none fs-3 "
+        >
+          Vote pro
+        </Link>
       </nav>
     </div>
   );

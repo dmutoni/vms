@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Candidate() {
   return (
@@ -9,9 +10,11 @@ export default function Candidate() {
         <div className="row mx-1">
           <button className="btn col bg-app-primary bg-text-color me-2">
             {" "}
-            VOTE{" "}
+            Vote{" "}
           </button>
-          <button className="btn col btn-outline-success"> VOTE </button>
+          <Link className="col" to="/details/1">
+            <button className="btn btn-outline-success"> Details </button>
+          </Link>
         </div>
       </div>
     </div>

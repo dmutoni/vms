@@ -4,9 +4,9 @@ import Header from "./components/header";
 
 export default function SignUp() {
   return (
-    <div>
+    <div className="col-12">
       <Header />
-      <div className="col-4 mx-auto border  p-5 mt-5">
+      <div className="col-12 col-lg-4 mx-auto border  p-5 mt-5">
         <p className="font-bold fs-1">Sign up</p>
         <form>
           <div className="mb-3">

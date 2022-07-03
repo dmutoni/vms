@@ -1,46 +1,68 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Candidate from "./components/candidate";
-import Header from "./components/header";
+import Sidebar from "./components/sidebar";
 
 export default function Dashboard() {
   return (
-    <div className="">
-      <Header />
-      <div className="row m-lg-4 ">
-        <div className="col-lg-6 col-md-12 col-sm-12">
-          <p className="fw-bold fs-1">
-            Fast and secure Presidential Elections{" "}
-          </p>
-          <p className="fw-normal fs-6">
-            For sure you have made a right choice
-          </p>
-          <Link to="/login">
-            <button className="btn w-50 bg-text-color h-25 bg-app-primary">
-              JOIN NOW
-            </button>
-          </Link>
-        </div>
-        <div className="col-lg-6 col-md-12 col-sm-12">
-          <img
-            className="w-50 d-block mx-auto"
-            src={"../assets/images/phone.png"}
-          />
-        </div>
+    <div className="d-flex flex-row gap-4">
+      <div className="col-2 bg-primary">
+        <Sidebar />
       </div>
-      <div className="d-flex justify-content-center align-content-center ">
-        <p className="d-block mx-auto font-bold fs-4">All candidates</p>
-      </div>
-      <div className="row col-8 mx-auto ">
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
+      <div className="col-8 mt-5">
+        <h2>All candidates</h2>
+        <table className="table table-hover table-bordered mt-5">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td className="d-flex fex-row gap-2">
+                <button type="button" class="btn btn-primary">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger">
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td className="d-flex fex-row gap-2">
+                <button type="button" class="btn btn-primary">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger">
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colSpan="2">Larry the Bird</td>
+              <td>@twitter</td>
+              <td className="d-flex fex-row gap-2">
+                <button type="button" class="btn btn-primary">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger">
+                  Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

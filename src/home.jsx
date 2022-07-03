@@ -5,33 +5,33 @@ import Header from "./components/header";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="col-12">
       <Header />
-      <div className="row m-lg-4 ">
+      <div className="m-lg-4 p-md-2 p-sm-3 d-lg-flex d-md-block ">
         <div className="col-lg-6 col-md-12 col-sm-12">
-          <p className="fw-bold fs-1">
+          <p className="fw-bold fs-1 col-sm-12 ">
             Fast and secure Presidential Elections{" "}
           </p>
           <p className="fw-normal fs-6">
             For sure you have made a right choice
           </p>
           <Link to="/login">
-            <button className="btn w-50 bg-text-color h-25 bg-app-primary">
+            <button className="btn bg-text-color col-md-12 col-sm-12 col-lg-6 h-25 bg-app-primary">
               JOIN NOW
             </button>
           </Link>
         </div>
-        <div className="col-lg-6 col-md-12 col-sm-12">
+        <div className="col-lg-6 col-md-12 col-sm-12 d-none d-lg-block mt-md-6">
           <img
             className="w-50 d-block mx-auto"
             src={"../assets/images/phone.png"}
           />
         </div>
       </div>
-      <div className="d-flex justify-content-center align-content-center ">
+      <div className="d-flex justify-content-center align-content-center mt-md-3 ">
         <p className="d-block mx-auto font-bold fs-4">All candidates</p>
       </div>
-      <div className="row col-8 mx-auto ">
+      <div className="row col-lg-8 col-md-12 col-sm-12 mx-lg-auto d-lg-block ">
         <Candidate />
         <Candidate />
         <Candidate />

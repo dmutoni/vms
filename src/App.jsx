@@ -7,6 +7,8 @@ import Login from "./login";
 import SignUp from "./signup";
 import Details from "./details";
 import Home from "./home";
+import AddCandidate from "./addCandidate";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -17,6 +19,7 @@ function App() {
       <Route path="/signup" element={<SignUp />} />
       <Route path="/details/:id" element={<Details />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/add-candidate" element={<AddCandidate />} />
     </Routes>
   );
 }

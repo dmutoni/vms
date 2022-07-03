@@ -1,18 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "./components/sidebar";
 
 export default function Dashboard() {
   return (
-    <div className="d-flex flex-row gap-4">
+    <div className="col-12 d-flex flex-row gap-4">
       <div className="col-2 ">
         <Sidebar />
       </div>
       <div className="col-8 mt-5">
         <div className="d-flex flex-row justify-content-between ">
           <h2>All candidates</h2>
-          <button type="button" class="btn bg-app-primary bg-text-color ">
-            Add candidate
-          </button>
+          <Link to="/add-candidate">
+            <button type="button" className="btn bg-app-primary bg-text-color ">
+              Add candidate
+            </button>
+          </Link>
         </div>
         <table className="table table-hover table-bordered mt-5">
           <thead>
@@ -31,10 +34,10 @@ export default function Dashboard() {
               <td>Otto</td>
               <td>@mdo</td>
               <td className="d-flex fex-row gap-2">
-                <button type="button" class="btn btn-primary">
+                <button type="button" className="btn btn-primary">
                   Edit
                 </button>
-                <button type="button" class="btn btn-danger">
+                <button type="button" className="btn btn-danger">
                   Delete
                 </button>
               </td>
@@ -45,10 +48,10 @@ export default function Dashboard() {
               <td>Thornton</td>
               <td>@fat</td>
               <td className="d-flex fex-row gap-2">
-                <button type="button" class="btn btn-primary">
+                <button type="button" className="btn btn-primary">
                   Edit
                 </button>
-                <button type="button" class="btn btn-danger">
+                <button type="button" className="btn btn-danger">
                   Delete
                 </button>
               </td>
@@ -58,10 +61,10 @@ export default function Dashboard() {
               <td colSpan="2">Larry the Bird</td>
               <td>@twitter</td>
               <td className="d-flex fex-row gap-2">
-                <button type="button" class="btn btn-primary">
+                <button type="button" className="btn btn-primary">
                   Edit
                 </button>
-                <button type="button" class="btn btn-danger">
+                <button type="button" className="btn btn-danger">
                   Delete
                 </button>
               </td>

@@ -5,7 +5,7 @@ import Header from "./components/header";
 export default function Details({ candidate }) {
   let { id } = useParams();
   return (
-    <>
+    <div className="container-fluid col-12">
       <Header />
       <div className="d-flex flex-row col-10 mx-auto mt-5 gap-3 ">
         <img className="col-4 my-auto" src={"../assets/images/barack.png"} />
@@ -41,6 +41,6 @@ export default function Details({ candidate }) {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }

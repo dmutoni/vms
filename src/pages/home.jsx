@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Candidate from "./components/candidate";
-import Header from "./components/header";
+import Candidate from "../components/candidate";
+import Header from "../components/header";
 
 export default function Home() {
   return (

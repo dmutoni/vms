@@ -1,28 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Sidebar from "./components/sidebar";
+import Header from "../components/header";
 
-export default function AddCandidate() {
+export default function Login() {
   return (
-    <div className="d-flex flex-row gap-4">
-      <div className="col-2 ">
-        <Sidebar />
-      </div>
-      <div className="col-12 col-lg-4 mt-5">
-        <h3>Add Candidate</h3>
+    <div className="col-12">
+      <Header />
+      <div className="d-block col-12 col-lg-4 mx-auto border  p-5 mt-5">
+        <p className="font-bold fs-1">Login</p>
         <form>
-          <div className="mb-3">
-            <label for="fullname" className="form-label">
-              Full name
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="fullname"
-              aria-describedby="fullnameHelp"
-            />
-          </div>
-
           <div className="mb-3">
             <label for="exampleInputEmail1" className="form-label">
               Email address
@@ -36,15 +22,14 @@ export default function AddCandidate() {
           </div>
           <div className="mb-3">
             <label for="exampleInputPassword1" className="form-label">
-              I agree to
+              Password
             </label>
-            <textarea
+            <input
+              type="password"
               className="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
+              id="exampleInputPassword1"
+            />
           </div>
-
           <Link to={"/dashboard"}>
             <button
               type="submit"
@@ -53,6 +38,10 @@ export default function AddCandidate() {
               Submit
             </button>
           </Link>
+          <div className="d-flex flex-row justify-content-center gap-2 mt-2 ">
+            <p>Don't have an account ? </p>
+            <Link to="/signup">Sign up</Link>
+          </div>
         </form>
       </div>
     </div>

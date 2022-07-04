@@ -1,9 +1,13 @@
-import axios, { AxiosResponse } from "axios";
-import { ResponseData } from "../types";
+import axios from "axios";
 import { url } from "../utils/url";
 
-const searchResto = async () => {
-    return await axios.get(`${url}/candidates`);
+const getCandidates = async () => {
+    try {
+        const response = await axios.get(`${url}/candidates`);
+        return response.data;
+    } catch(e) {
+        console.log(e);
+    }
 }
 
-export { searchResto }
+export { getCandidates }

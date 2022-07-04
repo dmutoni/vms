@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Dashboard from "./dashboard";
 import { Route, Routes } from "react-router-dom";
-import Login from "./login";
-import SignUp from "./signup";
-import Details from "./details";
-import Home from "./home";
-import AddCandidate from "./addCandidate";
+import Home from "./pages/home";
+import Login from "./pages/login";
+import SignUp from "./pages/signup";
+import Details from "./pages/details";
+import Dashboard from "./pages/dashboard";
+import AddCandidate from "./pages/addCandidate";
 
 function App() {
   const [count, setCount] = useState(0);

@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Candidate from "../components/candidate";
 import Header from "../components/header";
+import { getCandidates } from "../services/candidate.service";
 
 export default function Home() {
+  const [candidates, setCandidates] = React.useState([]);
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  useEffect(() => {
+    getCandidates()
+      .then((info) => {
+        setCandidates(info.data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <div className="col-12">
       <Header />
@@ -32,15 +47,22 @@ export default function Home() {
         <p className="d-block mx-auto font-bold fs-4">All candidates</p>
       </div>
       <div className="row col-12 mx-0 px-0 col-lg-8  mx-lg-auto  ">
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
-        <Candidate />
+        {isLoading ? (
+          <div className="d-flex justify-content-center align-content-center">
+            <div className="spinner-border text-primary" role="status">
+              <span className="sr-only">Loading...</span>
+            </div>
+          </div>
+        ) : (
+          candidates.map((candidate) => (
+            <Candidate
+              key={candidate.id}
+              candidateName={candidate.name}
+              id={candidate.id}
+              candidateImage={candidate.image}
+            />
+          ))
+        )}
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ export default function Home() {
     getCandidates()
       .then((info) => {
         setCandidates(info.data);
+        console.log(candidates);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -31,7 +32,7 @@ export default function Home() {
             For sure you have made a right choice
           </p>
           <Link to="/login">
-            <button className="btn bg-text-color col-md-12 col-sm-12 col-lg-6 h-25 bg-app-primary">
+            <button className="btn bg-text-color col-12 col-lg-6 h-25 bg-app-primary">
               JOIN NOW
             </button>
           </Link>
@@ -56,10 +57,10 @@ export default function Home() {
         ) : (
           candidates.map((candidate) => (
             <Candidate
-              key={candidate.id}
-              candidateName={candidate.name}
+              key={candidate._id}
+              candidateName={candidate.candidateName}
               id={candidate.id}
-              candidateImage={candidate.image}
+              candidateImage={candidate.candidateImage}
             />
           ))
         )}
